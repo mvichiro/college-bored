@@ -27,12 +27,17 @@ def add_card(board, title, description, due):
   return card
 
 def move_card(board, source, target, index):
-  source_list = board[source]
-  target_list = board[target]
-  target_list.append(source_list.pop(index))
+  try:
+    source_list = board[source]
+    target_list = board[target]
+    target_list.append(source_list.pop(index))
+  except KeyError:
+    print("Error: Invalid source or target list name.")
+  except :
+    print("")
   
 board = create_board()
 add_card(board, "test", "test", "oct 11")
 add_card(board, "testA", "testA", "oct 11")
-move_card(board, "ToDo", "Doing", 1)
+move_card(board, "To", "Doing", 1)
 print(board)
