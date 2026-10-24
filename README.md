@@ -1,7 +1,7 @@
 # College Bored
 College bored is a trello-style tool for organizing college application requirements.
 
-Current features: 
+## Current features
 create_board()
 -creates a new board with 3 lists: to-do, doing, and done
 
