@@ -1,4 +1,4 @@
-#College Bored
+# College Bored
 College bored is a trello-style tool for organizing college application requirements.
 
 Current features: 
